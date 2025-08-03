@@ -31,7 +31,7 @@ export default function Home() {
       {/* ✅ Navbar */}
       <Flex w="100%" p={4}  justify="space-between"  bg={"#FAF9EE"} borderRadius="xl" >
         <Heading size="md" color="#640D5F" >Home</Heading>
-        <Button color="#640D5F" variant="outline" border="2px solid #640D5F" borderRadius="xl" _hover={{bg:"#640D5F", color:"white"}}>Login</Button>
+        <Button bg="#640D5F" color="white" borderRadius="xl" _hover={{bg:"#640D5F"}}>Login</Button>
       </Flex>
 
       {/* ✅ Quote Box */}
@@ -46,7 +46,7 @@ export default function Home() {
           >
             <Heading 
 
-  color="#FFFFFF"
+  colorScheme="black"
  fontFamily='"DotGothic16", sans-serif'
   fontWeight="600"
   fontSize={["4xl"]} // Responsive font size

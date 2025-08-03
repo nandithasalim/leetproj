@@ -5,13 +5,19 @@
     "node-fetch": "^3.3.2",
     "react-router-dom": "^7.7.1"
   },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "vite": "^7.0.4"
+  },
   "name": "leetproj",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node chakra-demo/server.js",
-    "dev": "node chakra-demo/server.js"
+    "dev": "node chakra-demo/server.js",
+    "build": "cd chakra-demo && npm run build",
+    "install-deps": "cd chakra-demo && npm install"
   },
   "keywords": [],
   "author": "",

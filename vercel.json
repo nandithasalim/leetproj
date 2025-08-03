@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd chakra-demo && npm install && npm run build",
+  "outputDirectory": "chakra-demo/dist",
+  "installCommand": "npm install && cd chakra-demo && npm install"
+} 
