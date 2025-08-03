@@ -30,7 +30,7 @@ export default function FeaturesGrid() {
   ];
 
   return (
-    <SimpleGrid columns={2} spacing={7} p={7}>
+    <SimpleGrid columns={2} spacing={7} p={7} bg="transparent">
   {features.map((feature) => (
     <MotionBox
       key={feature.title}

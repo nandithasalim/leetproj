@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <VStack w="100%"  align="stretch"bg="#6C63FF" borderRadius="2xl" >
+    <VStack w="100%" minH="100vh" align="stretch" bg="#6C63FF" >
       {/* ✅ Navbar */}
       <Flex w="100%" p={4}  justify="space-between"  bg={"#FAF9EE"} borderRadius="xl" >
         <Heading size="md" color="#640D5F" >Home</Heading>

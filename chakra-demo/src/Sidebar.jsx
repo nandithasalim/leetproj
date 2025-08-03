@@ -73,11 +73,16 @@ function Sidebar() {
         <Input
           type="number"
           value={numProblems}
-          colorScheme='blackAlpha'
           onChange={(e) => setNumProblems(Number(e.target.value))}
           placeholder="Enter number"
-          
           size="md"
+          bg="white"
+          color="black"
+          fontWeight="bold"
+          _placeholder={{ color: "gray.500", fontWeight: "normal" }}
+          border="2px solid"
+          borderColor="gray.300"
+          _focus={{ borderColor: "#640D5F", boxShadow: "outline" }}
         />
         <Button colorScheme="whiteAlpha" onClick={handleGenerate} size="sm">
           Generate
@@ -106,7 +111,7 @@ function Sidebar() {
             <Checkbox
               isChecked={item.completed}
               onChange={() => toggleComplete(index)}
-              colorScheme="pink"
+              
             />
             <Input
               value={item.title}
@@ -125,7 +130,7 @@ function Sidebar() {
           <Text fontSize="sm" mb={1}>
             Progress: {completedCount}/{todoList.length}
           </Text>
-          <Progress value={progressPercent} colorScheme='pink' borderRadius="md" />
+          <Progress value={progressPercent} bg="gray.200" sx={{ '& > div': { bg: '#640D5F' } }} borderRadius="md" />
         </Box>
       )}
     </Box>
